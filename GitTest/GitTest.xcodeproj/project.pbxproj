@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18684A7F0C60BA467FB08B42 /* Pods_GitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9651223BB7FEA02841534F /* Pods_GitTest.framework */; };
 		1FF0FAB82839EAAD00993886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0FAB72839EAAD00993886 /* AppDelegate.swift */; };
 		1FF0FABA2839EAAD00993886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0FAB92839EAAD00993886 /* SceneDelegate.swift */; };
 		1FF0FABC2839EAAD00993886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0FABB2839EAAD00993886 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1ED1F960B1F0437D253EBBD9 /* Pods-GitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTest.release.xcconfig"; path = "Target Support Files/Pods-GitTest/Pods-GitTest.release.xcconfig"; sourceTree = "<group>"; };
+		1FE9D00020DE97253D19A812 /* Pods-GitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitTest.debug.xcconfig"; path = "Target Support Files/Pods-GitTest/Pods-GitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		1FF0FAB42839EAAD00993886 /* GitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF0FAB72839EAAD00993886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FF0FAB92839EAAD00993886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		1FF0FAC02839EAB000993886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF0FAC32839EAB000993886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FF0FAC52839EAB000993886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9651223BB7FEA02841534F /* Pods_GitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18684A7F0C60BA467FB08B42 /* Pods_GitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1FF0FAB62839EAAD00993886 /* GitTest */,
 				1FF0FAB52839EAAD00993886 /* Products */,
+				84E1D7E29E3CD1D1BFA15C5F /* Pods */,
+				3B3F0823A65280995F713480 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = GitTest;
 			sourceTree = "<group>";
 		};
+		3B3F0823A65280995F713480 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C9651223BB7FEA02841534F /* Pods_GitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E1D7E29E3CD1D1BFA15C5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FE9D00020DE97253D19A812 /* Pods-GitTest.debug.xcconfig */,
+				1ED1F960B1F0437D253EBBD9 /* Pods-GitTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FF0FAC82839EAB000993886 /* Build configuration list for PBXNativeTarget "GitTest" */;
 			buildPhases = (
+				D4EB3F24DB54AA5F8CDB8F33 /* [CP] Check Pods Manifest.lock */,
 				1FF0FAB02839EAAD00993886 /* Sources */,
 				1FF0FAB12839EAAD00993886 /* Frameworks */,
 				1FF0FAB22839EAAD00993886 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4EB3F24DB54AA5F8CDB8F33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FF0FAB02839EAAD00993886 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		1FF0FAC92839EAB000993886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE9D00020DE97253D19A812 /* Pods-GitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		1FF0FACA2839EAB000993886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ED1F960B1F0437D253EBBD9 /* Pods-GitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
