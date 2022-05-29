@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,12 @@ class ViewController: UIViewController {
         
         let helloWorldLabel = UILabel()
         helloWorldLabel.text = "Hello World!"
+        
+        view.addSubview(helloWorldLabel)
+        helloWorldLabel.snp.makeConstraints { make in
+            make.center.equalTo(view)
+        }
+        
     }
 
 
