@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .yellow
+        self.view.backgroundColor = .systemGreen
         
         let helloWorldLabel = UILabel()
         helloWorldLabel.text = "Hello World!"
