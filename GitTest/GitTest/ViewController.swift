@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         let helloWorldLabel = UILabel()
         helloWorldLabel.text = "Hello Today!"
-        helloWorldLabel.textColor = .yellow
+        helloWorldLabel.textColor = .gray
         helloWorldLabel.font = UIFont.systemFont(ofSize: 32)
         
         view.addSubview(helloWorldLabel)
