@@ -17,16 +17,14 @@ class ViewController: UIViewController {
         
         let helloWorldLabel = UILabel()
         helloWorldLabel.text = "Hello Today!"
-        helloWorldLabel.textColor = .yellow
+        helloWorldLabel.textColor = .black
         helloWorldLabel.font = UIFont.systemFont(ofSize: 32)
         
         view.addSubview(helloWorldLabel)
         helloWorldLabel.snp.makeConstraints { make in
             make.center.equalTo(view)
         }
-        
     }
-
 
 }
 
